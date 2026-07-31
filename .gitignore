@@ -1,0 +1,41 @@
+# ─── Herstellerunterlagen ───────────────────────────────────────────────
+# Urheberrechtlich geschützt ("Alle Rechte vorbehalten. Nachdruck nur mit
+# Genehmigung des Herausgebers."). Bezugsquellen stehen in QUELLEN.md.
+docs/
+
+# Aus denselben Unterlagen extrahierter Volltext
+research/text/
+
+# Aus denselben Unterlagen extrahierte Abbildungen
+bilder/Bedienungshandbuch_UNIMET_1000ST_1100ST_de/
+bilder/EN_Manual_UNIMET_800ST_810ST/
+bilder/Informationen_UNIMET_Softwareupdate/
+bilder/UNIData1100_Datenblatt_de/
+bilder/UNIData1100_Handbuch_de/
+bilder/UNIMET1100_Flyer_de/
+bilder/UNIMET300ST_Handbuch_de/
+bilder/UNIMET800ST_810ST_Handbuch_de/
+bilder/UNIMET800ST_Controlcenter_de/
+bilder/UNIMET_Interface_Handbuch_de/
+bilder/handbuch/
+
+# Fremde Binärdateien (Kontron/Bender), nur lokal archiviert
+software/
+
+# Zwischenergebnisse der Textextraktion
+research/*_manual.txt
+research/UNIMET_Softwareupdate_Info.txt
+
+# ─── Betriebssystem / Werkzeuge ─────────────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+.claude/
+
+# ─── Fremde Inhalte, bewusst nicht mitveröffentlicht ────────────────────
+# BIOS-Image des Geräts (Bender/Chips&Technologies). Prüfsummen und
+# vollständige Analyse stehen in research/EPROM_ANALYSE.md.
+firmware/
+
+# Fotos aus der Verkaufsanzeige (nicht selbst aufgenommen)
+s-l1600*.webp
