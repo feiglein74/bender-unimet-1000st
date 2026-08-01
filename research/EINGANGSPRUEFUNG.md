@@ -1,7 +1,16 @@
-# Eingangsprüfung UNIMET 1000 ST
+# Checkliste zur Erstinbetriebnahme
 
-Abzuarbeiten, wenn das Gerät ankommt. Reihenfolge einhalten — jeder Schritt
-sichert Information, die ein späterer Schritt zerstören könnte.
+> **Entstanden, bevor das Gerät eintraf.** Die Reihenfolge folgt dem Grundsatz,
+> dass jeder Schritt Information sichert, die ein späterer zerstören könnte.
+>
+> **Teilweise überholt.** Die Diagnose stützte sich damals auf die Annahme eines
+> Kontron MOPS/386A — tatsächlich sitzt im Gerät ein Chips & Technologies F8680.
+> Die BIOS-Angaben in Phase 5 gelten deshalb nicht; die zutreffenden stehen in
+> `EPROM_ANALYSE.md`. Was das Gerät tatsächlich ist, steht in `STAND.md`.
+>
+> **Weiterhin brauchbar** ist das Vorgehen als solches: Reihenfolge,
+> Sicherheitshinweise, Dokumentationsschritte und die Phasen 0 bis 4. Wer ein
+> vergleichbares Altgerät vor sich hat, kann sich daran entlanghangeln.
 
 > **⚠️ Sicherheit.** Das Gerät führt Netzspannung auf die Prüfsteckdose, erzeugt
 > DC 500 V für die Isolationsmessung und schaltet Netzspannung auf
@@ -17,7 +26,7 @@ sichert Information, die ein späterer Schritt zerstören könnte.
       Prüfklemme, Kaltgeräteadapter VK701-7, Nullmodemkabel, Tastaturmodul TM1000,
       Tragetasche?
       *(Diese Liste ist der Lieferumfang des **1100ST** — der des 1000ST ist
-      nicht dokumentiert, siehe `MESSTECHNIK.md` 3.5. Als Orientierung brauchbar,
+      nicht dokumentiert, siehe `MESSTECHNIK.md` 3.6. Als Orientierung brauchbar,
       nicht als Sollzustand.)*
 - [ ] **Foto der seitlichen Anschlussleiste** erbitten und prüfen: welche
       Schnittstellen sind bestückt, welche fehlen, gibt es Blindplatten oder
@@ -199,11 +208,11 @@ MOPS herausführen (Kontron-Adapterkabel KAB-DSUB9-2, 2,54 mm 10-polig) — für
 Backup und BIOS-Arbeit ohne angeschlossenen Prüfling unbedenklich, für den
 Messbetrieb fehlt dann aber die galvanische Trennung. Oder über die RS-485
 gehen; der Rückseitenaufkleber nennt dort das Bender-SCPI-Protokoll, also
-vermutlich dieselbe Befehlsfamilie (siehe `MESSTECHNIK.md` 3.5).
+vermutlich dieselbe Befehlsfamilie (siehe `MESSTECHNIK.md` 3.6).
 
 ### Verdrahtung aufnehmen — welcher Anschluss geht wohin?
 
-Das ist nirgends dokumentiert (siehe `MESSTECHNIK.md` 3.5). Beim offenen Gerät
+Das ist nirgends dokumentiert (siehe `MESSTECHNIK.md` 3.6). Beim offenen Gerät
 lässt es sich aber ablesen und ist die Grundlage für alles Weitere:
 
 - [ ] **PC/104-Stapel von der Seite fotografieren**, Module zählen und von oben

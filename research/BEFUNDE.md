@@ -1,4 +1,20 @@
-# Bender UNIMET 1000 ST — Recherche-Befunde
+# Diagnoseprotokoll — von der Fehlermeldung zur Fehldiagnose und zurück
+
+> **Dieses Dokument ist ein Protokoll, keine Gerätebeschreibung.**
+>
+> Es entstand, **bevor** das Gerät eintraf, allein anhand eines Fotos des
+> Bootbildschirms und der Herstellerunterlagen. Die zentrale Annahme darin —
+> im Gerät sitze ein Kontron MOPS/386A — **war falsch**. Sie stammte aus einem
+> Forenthread, der ein anderes Baujahr beschreibt.
+>
+> Die Fehlspur ist samt Widerruf stehen geblieben, weil sie zeigt, wie weit man
+> mit plausibler Dokumentenrecherche kommt und wo sie kippt. Wer die
+> **tatsächliche** Hardware sucht, liest `STAND.md` und `ANSCHLUESSE.md`.
+>
+> Weiterhin gültig sind die Abschnitte 5 bis 7: die Suche nach dem Bootmedium,
+> die Verfügbarkeit von Herstellersoftware und die Frontplattenbelegung.
+
+## Ausgangslage
 
 Stand: 2026-07-27. Gerät noch nicht eingetroffen; Analyse basiert auf dem POST-Foto
 (`s-l1600.webp`) plus Herstellerdokumentation.
@@ -45,7 +61,7 @@ Bewertung Zeile für Zeile:
 > Neue Plattformunterlagen liegen in `docs/f8680/`. Aktueller Stand siehe
 > Abschnitt 2a.
 
-## 2a. Tatsächliche Hardware (Stand 2026-07-30, aus Fotos)
+## 2. Tatsächliche Hardware (Korrektur vom 2026-07-30, aus Fotos)
 
 Der PC/104-Stapel besteht aus mindestens drei Baugruppen:
 
@@ -87,7 +103,10 @@ Da der F8680 PCMCIA nativ unterstützt, ist **die Speicherkarte als Boot- oder
 Massenspeichermedium plausibel** — nicht nur als Katalogspeicher. Das würde das
 Symptom ebenso erklären: keine Karte → kein `C:` → Rückfall auf A:.
 
-## 2. Hardware im Gerät (ÜBERHOLT — siehe 2a)
+## 2b. Die widerlegte Annahme: Kontron MOPS/386A ⛔
+
+*Der folgende Abschnitt beschreibt, wovon wir vor Eintreffen des Geräts
+ausgingen. Er ist **falsch** und bleibt nur zur Nachvollziehbarkeit stehen.*
 
 Laut Forenthread mikrocontroller.net/topic/566576 (zwei Geräte, gleiches Symptomumfeld):
 

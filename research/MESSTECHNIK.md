@@ -1,4 +1,18 @@
-# UNIMET 1000 ST — Prüfhardware: was dokumentiert ist
+# Prüf- und Messtechnik des UNIMET 1000 ST
+
+**Was dieses Dokument enthält:** die technischen Daten des Geräts aus den
+Herstellerunterlagen, die daraus und aus Messungen am offenen Gerät
+rekonstruierte Architektur, und eine Einschätzung, was davon nachbaubar wäre.
+
+**Reihenfolge:** Abschnitte 1 bis 3.4 stammen aus der Auswertung der
+Herstellerunterlagen, bevor das Gerät verfügbar war. Ab 3.5 folgen Befunde vom
+geöffneten Gerät. Abschnitt 3.6 enthält frühere Vermutungen, die sich als falsch
+erwiesen haben — sie bleiben zur Nachvollziehbarkeit stehen.
+
+**Kernaussage:** Das Messteil wurde über zwei getrennte Wege angesprochen — die
+Relaismatrix per I²C über die zweckentfremdeten Tastaturpins des Prozessors, die
+Messkarte per RS-485 über den UART. Die Messkarte selbst fehlt im untersuchten
+Gerät.
 
 Ausgewertet aus `docs/bender/Bedienungshandbuch_UNIMET_1000ST_1100ST_de.pdf` und
 `docs/bender/UNIMET_Interface_Handbuch_de.pdf` (TGH1315/01.2006).
@@ -145,7 +159,7 @@ sind daher zu prüfen: **Softwareversion** (`:IDNF?` über RS232) und
   ersetzt Variablen im Text zur Laufzeit — nützlich zu wissen, falls man den
   Prüfschrittdatensatz je selbst erzeugen will.
 
-## 3.4a Anbindung des Messteils — am Gerät festgestellt (2026-07-30)
+## 3.5 Anbindung des Messteils — am Gerät festgestellt
 
 **Befund am geöffneten Gerät:** Vom CPU-Modul führt ein **14-poliges
 Flachbandkabel** zur **Relaisplatine**, und diese trägt ihrerseits ein
@@ -176,8 +190,7 @@ CPU-Modul ──14-polig──> Relaisplatine ──Flachband──> RS-485 (Rü
 Die **RS-485-Schnittstelle kommt nicht vom CPU-Modul, sondern von der
 Relaisplatine.** Sie hängt also am selben Strang wie das Messteil.
 
-**Damit ist die frühere Hypothese belegt** (siehe Abschnitt „RS-485-Port"
-weiter unten): Das Messteil wird über einen RS-485-Bus angesprochen, und der
+**Damit ist die frühere Hypothese belegt** (siehe 3.6, „RS-485-Port"): Das Messteil wird über einen RS-485-Bus angesprochen, und der
 Serviceport an der Rückwand führt genau diesen Bus nach außen. Der
 Rückseitenaufkleber „Datensichtgerät für RS 485 Schnittstelle — Bender SCPI
 Protokoll" passt exakt dazu.
@@ -319,7 +332,11 @@ rekonstruieren.
 - Beschriftung des 14-poligen Steckers an beiden Enden
 - Bausteine nahe dem Stecker (entscheidet Parallelbus vs. seriell)
 
-## 3.5 Anbindung des Messteils an den Steuerrechner (ÜBERHOLT — siehe 3.4a)
+## 3.6 Frühere Vermutungen zur Anbindung ⛔
+
+*Widerlegt durch die Messungen in 3.5. Bleibt zur Nachvollziehbarkeit stehen.*
+
+### Ursprüngliche Überlegung
 
 **Direkt dokumentiert ist das nirgends** — weder Bender noch Kontron haben ein
 Blockschaltbild oder eine Verdrahtungsübersicht veröffentlicht. Was folgt, ist

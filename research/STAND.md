@@ -35,10 +35,20 @@
 
 ---
 
-# Arbeitsstand — 2026-07-30
+## Wie dieses Dokument zu lesen ist
 
-Gerät ist eingetroffen und geöffnet. Erste Sichtprüfung ohne Befund: keine
-aufgeblähten Kondensatoren, keine Schmorspuren, kein Geruch.
+Es ist über zwei Tage gewachsen und **chronologisch geschichtet**. Der Kasten
+oben enthält die abschließende Deutung; darunter folgen die Befunde in der
+Reihenfolge ihrer Entstehung. Wo eine frühere Annahme später widerlegt wurde,
+steht das als Nachtrag dabei statt sie zu tilgen — die Irrwege sind Teil des
+Ergebnisses.
+
+Wer nur wissen will, was das Gerät ist und warum es nicht läuft, liest den
+Kasten oben und den Abschnitt „Die Messkarte fehlt".
+
+## Erste Sichtprüfung am offenen Gerät (2026-07-30)
+
+Ohne Befund: keine aufgeblähten Kondensatoren, keine Schmorspuren, kein Geruch.
 
 ## Hardware — bestätigt am offenen Gerät
 

@@ -1,6 +1,12 @@
-# Anschlussbelegung CPU-Modul — Arbeitsblatt
+# Anschlussbelegung des CPU-Moduls
 
-Ziel: jeden Steckverbinder des F8680-Moduls zuordnen. Stand: in Arbeit.
+Vollständige Aufnahme aller Steckverbinder des F8680-Moduls, ermittelt durch
+Durchklingeln am geöffneten Gerät. Dazu die für dieses Gerät relevanten Pins
+des Prozessors und die Daten des Displays.
+
+**Kernaussage:** Von sechs Steckverbindern des Moduls sind nur vier beschaltet.
+Das Modul ist ein Standardprodukt mit vollem I/O-Satz, von dem Bender nur einen
+Teil genutzt hat.
 
 ## Was das Modul herausführen muss
 
@@ -127,19 +133,7 @@ Die Handbuch-Screenshots mit 321×201 px sind der Grafikmodus **320×200**, den
 Das Panel ist ein gängiges 5,7"-Industriedisplay und als Ersatzteil weiterhin
 beschaffbar.
 
-## Aufnahmetabelle (Rohnotizen)
-
-| Nr. | Siebdruck | Pins | Kabeltyp | Führt zu | Messbefund | Zuordnung |
-|---|---|---:|---|---|---|---|
-| 1 | | 26 | Einzeladern | Frontblende | — | **Tastaturmatrix** ✅ |
-| 2 | | 14 | Flachband | Relaisplatine | — | **Messteil** ✅ |
-| 3 | | ~26 | ? | ? | | ? |
-| 4 | | ~20 | ? | ? | | ? |
-| 5 | | 4 | Einzeladern | ? | | **Versorgung?** |
-| 6 | | 10 | Flachband | ? | | ? |
-| … | | | | | | |
-
-## Elektrischer Fingerabdruck — so ordnet man zu
+## Anhang: elektrischer Fingerabdruck — so ordnet man Anschlüsse zu
 
 Gerät eingeschaltet, Messung gegen Masse:
 
@@ -165,7 +159,7 @@ Pfostensteckern im 2,54-mm-Raster ist Messen im Betrieb unkritisch.
   zu einer anderen Baugruppe (Verteilerplatine mit CCFL-Inverter `PCU-554`,
   `NM232DD` und `74HCT14N`) und werden erst **dort** wieder herausgeführt.
   Es geht also kein Kabel direkt vom CPU-Modul zum Display oder zur Rückwand.
-- **Gesichert ist bislang nur die Stromversorgung.**
+- Die Zuordnung aller sechs Steckverbinder ist abgeschlossen (Tabelle oben).
 
 ## Offene Fragen
 
