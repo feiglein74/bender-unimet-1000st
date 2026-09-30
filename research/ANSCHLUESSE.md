@@ -118,6 +118,7 @@ damit unmittelbar um die Ecke neben Pin 1 — ohne Abzählen auffindbar.
 | Datenübertragung | **4 Bit parallel** |
 | Anschluss | **14-poliges FFC, 1,25 mm Raster** — das dünne Band von der Verteilerplatine |
 | Beleuchtung | **CCFL**, versorgt vom `TDK PCU-554` auf der Verteilerplatine |
+| Versorgung Inverter | **5 V** — gemessen und bis zur 5-V-Schiene des CPU-Moduls zurückverfolgt |
 | Kontrastverhältnis | 15:1 typ. |
 | Temperatur | 0…50 °C Betrieb |
 
@@ -132,6 +133,26 @@ Die Handbuch-Screenshots mit 321×201 px sind der Grafikmodus **320×200**, den
 
 Das Panel ist ein gängiges 5,7"-Industriedisplay und als Ersatzteil weiterhin
 beschaffbar.
+
+**Versorgungsbedarf des Displaysystems:**
+
+| | |
+|---|---|
+| Panel-Logik (`VDD`) | **5 V** |
+| CCFL-Inverter | **5 V** |
+| **`VEE`** — negative Vorspannung fürs Flüssigkristall | typ. **−15 … −25 V**, bestimmt den Kontrast |
+
+**Von außen wird nur 5 V zugeführt**; `VEE` erzeugt das Gerät selbst — Kandidat
+ist der `MC34063AP1` auf dem CPU-Modul, das Kontrastpoti auf der
+Verteilerplatine stellt den Arbeitspunkt ein.
+
+Für eine Wiederverwendung mit eigenem Controller heißt das: Verteilerplatine und
+`VEE`-Erzeugung mitbenutzen, dann reichen 5 V plus Signale. Bei komplettem
+Neuaufbau muss die negative Spannung selbst erzeugt werden. Den exakten
+`VEE`-Wert nennt das Optrex-Datenblatt des DMF-50840.
+
+⚠️ Ausgangsseite des Inverters und Lampenzuleitung führen im Betrieb einige
+hundert Volt Wechselspannung. Nur die Eingangsseite antasten.
 
 ## Anhang: elektrischer Fingerabdruck — so ordnet man Anschlüsse zu
 
