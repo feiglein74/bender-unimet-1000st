@@ -42,7 +42,9 @@ und `Diskette error` in Endlosschleife.
 | **`research/BEFUNDE.md`** | Fehlerdiagnose, Reparaturweg, Fallen, Suche nach dem OS-Image |
 | **`research/MESSTECHNIK.md`** | Prüfhardware: technische Daten, rekonstruierte Relaistopologie, Nachbau-Einschätzung |
 | **`research/RS232_PROTOKOLL.md`** | Vollständige Schnittstellenreferenz: 435 Prüfschritte, 493 Befehle, Protokoll, Verkabelung |
+| `research/UEBERTRAGER.md` | Bauteilcharakterisierung des ausgelöteten Übertragers `BG160 805 Q3995` (Nachuntersuchung) |
 | `tools/parse_interface.py` | erzeugt die RS232-Referenz aus dem Interface-Handbuch neu |
+| `tools/xt_keyboard/` | Arduino-Sketch: XT-Tastatur-Emulator am F8680, Scancodes über die serielle Konsole |
 | `research/text/` | Alle PDFs als durchsuchbarer Text (`pdftotext -layout`) |
 | `research/threads/` | Archivierter Forenthread mikrocontroller.net/topic/566576 |
 | `docs/bender/` | Bender-/BENTRON-Handbücher (1000ST/1100ST, Interface, UNIData1100, 300ST, 800ST/810ST) |
