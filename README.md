@@ -42,6 +42,8 @@ und `Diskette error` in Endlosschleife.
 | **`research/BEFUNDE.md`** | Fehlerdiagnose, Reparaturweg, Fallen, Suche nach dem OS-Image |
 | **`research/MESSTECHNIK.md`** | Prüfhardware: technische Daten, rekonstruierte Relaistopologie, Nachbau-Einschätzung |
 | **`research/RS232_PROTOKOLL.md`** | Vollständige Schnittstellenreferenz: 435 Prüfschritte, 493 Befehle, Protokoll, Verkabelung |
+| **`research/RELAISMATRIX.md`** | Relaisplatine: I²C-Ansteuerung und Bitbelegung (unvollständig kartiert) |
+| **`research/ANSCHLUESSE.md`** | Anschlussbelegung aller Steckverbinder des CPU-Moduls, Prozessor-Pins, Display-Daten und -Versorgung |
 | `research/UEBERTRAGER.md` | Bauteilcharakterisierung des ausgelöteten Übertragers `BG160 805 Q3995` (Nachuntersuchung) |
 | `tools/parse_interface.py` | erzeugt die RS232-Referenz aus dem Interface-Handbuch neu |
 | `tools/xt_keyboard/` | Arduino-Sketch: XT-Tastatur-Emulator am F8680, Scancodes über die serielle Konsole |
