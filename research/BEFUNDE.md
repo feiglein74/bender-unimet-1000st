@@ -299,7 +299,7 @@ docs/bender/UNIMET800ST_Controlcenter_de.pdf
 docs/bender/UNIMET1100_Flyer_de.pdf
 docs/diskonchip/DiskOnChip_Software_Utilities.pdf
 research/MOPS386A_manual.txt                     durchsuchbarer Volltext
-research/threads/mikrocontroller_566576.{html,txt}
+research/threads/mikrocontroller_566576.{html,txt}   nur lokal, Thread: mikrocontroller.net/topic/566576
 ```
 
 ## 7. Offene Punkte (nach Eintreffen zu klären)

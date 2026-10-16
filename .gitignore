@@ -39,3 +39,6 @@ firmware/
 
 # Fotos aus der Verkaufsanzeige (nicht selbst aufgenommen)
 s-l1600*.webp
+
+# Archivkopie eines Forenthreads (fremde Inhalte), nur lokal
+research/threads/

@@ -1,0 +1,10 @@
+title: Bender UNIMET 1000 ST — teardown & reverse engineering
+description: >-
+  Repair and reverse-engineering notes for the Bender UNIMET 1000 ST / 1100 ST
+  medical electrical safety tester (IEC 62353, VDE 0751): BIOS dump, RS-232
+  command set, I2C relay matrix, F8680 PC/CHIP connector pinouts.
+theme: jekyll-theme-minimal
+lang: en
+exclude:
+  - tools/
+  - TODO.md
